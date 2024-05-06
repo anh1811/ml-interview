@@ -1,0 +1,151 @@
+tree
+version=v4
+num_class=1
+num_tree_per_iteration=1
+label_index=0
+max_feature_idx=90
+objective=binary sigmoid:1
+feature_names=address_property_equity bankBalance_amount personCreditScore_factors_totalDebt personCreditScore_monthlyIncome personCreditScore_factors_savingsBehavior address_current personCreditScore_factors_incomeStability personCreditScore_factors_accountAge personCreditScore_factors_creditInquiries personCreditScore_factors_defaults personCreditScore_factors_latePayments address_region_Delaware address_region_Iowa address_status_living-with-friends bankBalance_credit_debit_indicator_Credit bankBalance_credit_debit_indicator_Debit person_occupation_Customer_Creative_Coordinator person_occupation_Forward_Implementation_Liaison person_occupation_International_Solutions_Supervisor person_nationality_Lebanon person_nationality_Russian_Federation person_nationality_Saint_Pierre_and_Miquelon bankBalance_currency_USD personCreditScore_factors_spendingPatterns_low-risk personCreditScore_factors_spendingPatterns_moderate ratio_bankbalance_debt ratio_income_debt ratio_saving_debt TRANS_amount_MEAN TRANS_amount_MAX TRANS_amount_SUM TRANS_amount_VAR TRANS_balance_amount_MEAN TRANS_balance_amount_MAX TRANS_balance_amount_SUM TRANS_balance_amount_VAR TRANS_credit_debit_indicator_Credit_MEAN TRANS_credit_debit_indicator_Debit_MEAN TRANS_status_Completed_MEAN TRANS_status_Pending_MEAN TRANS_booking_PERIOD_MEAN TRANS_booking_PERIOD_MIN TRANS_booking_PERIOD_MAX TRANS_ratio_balance_amount_MEAN TRANS_ratio_balance_amount_MAX LOAN_APPLICATION_funding_amount_MEAN LOAN_APPLICATION_funding_amount_MAX LOAN_APPLICATION_funding_amount_SUM LOAN_APPLICATION_funding_amount_VAR LOAN_APPLICATION_ration_funding_amount_credit_limit_MEAN LOAN_APPLICATION_ration_funding_amount_credit_limit_MAX LOAN_APPLICATION_ration_funding_amount_credit_limit_SUM LOAN_APPLICATION_ration_funding_amount_credit_limit_VAR LOAN_APPLICATION_credit_limit_MEAN LOAN_APPLICATION_credit_limit_MAX LOAN_APPLICATION_funding_reasons_Debt-Consolidation_MEAN LOAN_APPLICATION_funding_reasons_Home-Moving_MEAN LOAN_APPLICATION_funding_reasons_Settle-Credit-Card_MEAN LOAN_APPLICATION_status_Completed_MEAN LOAN_APPLICATION_status_Defaulted_MEAN LOAN_APPLICATION_status_On-Track_MEAN LOAN_APPLICATION_status_Missed-Payment_MEAN LOAN_APPLICATION_region_Hawaii_MEAN LOAN_APPLICATION_region_Maine_MEAN LOAN_APPLICATION_region_Michigan_MEAN LOAN_APPLICATION_region_Missouri_MEAN LOAN_APPLICATION_region_Nebraska_MEAN LOAN_APPLICATION_region_Nevada_MEAN LOAN_APPLICATION_region_New_Hampshire_MEAN LOAN_APPLICATION_region_New_Jersey_MEAN LOAN_APPLICATION_region_North_Carolina_MEAN LOAN_APPLICATION_region_Tennessee_MEAN LOAN_APPLICATION_region_Texas_MEAN loan_active_funding_amount_MEAN loan_active_funding_amount_MAX loan_active_funding_amount_SUM loan_active_ration_funding_amount_credit_limit_MEAN loan_active_ration_funding_amount_credit_limit_MAX loan_active_credit_limit_MEAN loan_active_credit_limit_MAX loan_active_status_On-Track_MEAN loan_active_status_Missed-Payment_MEAN loan_closed_funding_amount_MEAN loan_closed_funding_amount_MAX loan_closed_funding_amount_SUM loan_closed_ration_funding_amount_credit_limit_MEAN loan_closed_ration_funding_amount_credit_limit_MAX loan_closed_credit_limit_MEAN loan_closed_credit_limit_MAX loan_closed_status_Completed_MEAN loan_closed_status_Defaulted_MEAN
+feature_infos=none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none none
+tree_sizes=239
+
+Tree=0
+num_leaves=1
+num_cat=0
+split_feature=
+split_gain=
+threshold=
+decision_type=
+left_child=
+right_child=
+leaf_value=-34.538776391283193
+leaf_weight=
+leaf_count=
+internal_value=
+internal_weight=
+internal_count=
+is_linear=0
+shrinkage=1
+
+
+end of trees
+
+feature_importances:
+
+parameters:
+[boosting: gbdt]
+[objective: binary]
+[metric: auc,binary_logloss]
+[tree_learner: serial]
+[device_type: cpu]
+[data: ]
+[valid: ]
+[num_iterations: 10000]
+[learning_rate: 0.02]
+[num_leaves: 34]
+[num_threads: 1]
+[deterministic: 0]
+[force_col_wise: 0]
+[force_row_wise: 0]
+[histogram_pool_size: -1]
+[max_depth: 8]
+[min_data_in_leaf: 20]
+[min_sum_hessian_in_leaf: 39.326]
+[bagging_fraction: 0.871562]
+[pos_bagging_fraction: 1]
+[neg_bagging_fraction: 1]
+[bagging_freq: 0]
+[bagging_seed: 3]
+[feature_fraction: 0.949704]
+[feature_fraction_bynode: 1]
+[feature_fraction_seed: 2]
+[extra_trees: 0]
+[extra_seed: 6]
+[early_stopping_round: 200]
+[first_metric_only: 0]
+[max_delta_step: 0]
+[lambda_l1: 0.0415455]
+[lambda_l2: 0.0735294]
+[linear_lambda: 0]
+[min_gain_to_split: 0.0222415]
+[drop_rate: 0.1]
+[max_drop: 50]
+[skip_drop: 0.5]
+[xgboost_dart_mode: 0]
+[uniform_drop: 0]
+[drop_seed: 4]
+[top_rate: 0.2]
+[other_rate: 0.1]
+[min_data_per_group: 100]
+[max_cat_threshold: 32]
+[cat_l2: 10]
+[cat_smooth: 10]
+[max_cat_to_onehot: 4]
+[top_k: 20]
+[monotone_constraints: ]
+[monotone_constraints_method: basic]
+[monotone_penalty: 0]
+[feature_contri: ]
+[forcedsplits_filename: ]
+[refit_decay_rate: 0.9]
+[cegb_tradeoff: 1]
+[cegb_penalty_split: 0]
+[cegb_penalty_feature_lazy: ]
+[cegb_penalty_feature_coupled: ]
+[path_smooth: 0]
+[interaction_constraints: ]
+[verbosity: 200]
+[saved_feature_importance_type: 0]
+[linear_tree: 0]
+[max_bin: 255]
+[max_bin_by_feature: ]
+[min_data_in_bin: 3]
+[bin_construct_sample_cnt: 200000]
+[data_random_seed: 1]
+[is_enable_sparse: 1]
+[enable_bundle: 1]
+[use_missing: 1]
+[zero_as_missing: 0]
+[feature_pre_filter: 1]
+[pre_partition: 0]
+[two_round: 0]
+[header: 0]
+[label_column: ]
+[weight_column: ]
+[group_column: ]
+[ignore_column: ]
+[categorical_feature: ]
+[forcedbins_filename: ]
+[precise_float_parser: 0]
+[parser_config_file: ]
+[objective_seed: 5]
+[num_class: 1]
+[is_unbalance: 0]
+[scale_pos_weight: 1]
+[sigmoid: 1]
+[boost_from_average: 1]
+[reg_sqrt: 0]
+[alpha: 0.9]
+[fair_c: 1]
+[poisson_max_delta_step: 0.7]
+[tweedie_variance_power: 1.5]
+[lambdarank_truncation_level: 30]
+[lambdarank_norm: 1]
+[label_gain: ]
+[lambdarank_position_bias_regularization: 0]
+[eval_at: ]
+[multi_error_top_k: 1]
+[auc_mu_weights: ]
+[num_machines: 1]
+[local_listen_port: 12400]
+[time_out: 120]
+[machine_list_filename: ]
+[machines: ]
+[gpu_platform_id: -1]
+[gpu_device_id: -1]
+[gpu_use_dp: 0]
+[num_gpu: 1]
+
+end of parameters
+
+pandas_categorical:[]
